@@ -39,7 +39,7 @@ export default function MenuItems({ items, categoryLabel }: MenuItemsProps) {
     <Box>
       <Grid container spacing={2}>
         {items.map((item) => (
-          <Grid size={{ xs: 6 }} key={item.id}>
+          <Grid item xs={6} key={item.id}>
             <Card
               onClick={() => handleItemClick(item)}
               elevation={0}

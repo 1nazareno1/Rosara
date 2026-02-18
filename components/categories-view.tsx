@@ -133,10 +133,10 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
 
         {/* Categories Grid */}
         <Grid container spacing={1.5}>
-          {categories.map((category) => {
-            const Icon = iconMap[category.icon]
-            return (
-              <Grid size={{ xs: 6, sm: 6, md: 3 }} key={category.id}>
+          {categories.reduce((acc: React.JSX.Element[], category, idx) => {
+            const Icon = iconMap[category.icon];
+            acc.push(
+              <Grid item xs={6} sm={6} md={3} key={category.id}>
                 <Card
                   onClick={() => handleCategoryClick(category.id)}
                   sx={{
@@ -167,7 +167,6 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                   >
                     {Icon && <Icon size={40} color="#8B6F47" strokeWidth={1.3} />}
                   </Box>
-
                   <CardContent
                     sx={{
                       flexGrow: 1,
@@ -191,8 +190,15 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                   </CardContent>
                 </Card>
               </Grid>
-            )
-          })}
+            );
+            // Agrega un separador invisible cada dos elementos, excepto después del último par
+            if ((idx + 1) % 2 === 0 && idx !== categories.length - 1) {
+              acc.push(
+                <Grid item xs={12} key={`spacer-${idx}`} sx={{ height: 12 }} />
+              );
+            }
+            return acc;
+          }, [])}
         </Grid>
       </Container>
 
