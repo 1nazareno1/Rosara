@@ -1,7 +1,7 @@
 
 
 
-export type IconKey =  "panaderia" | "bebidasConAlcohol" 
+export type IconKey =    "nuevos" | "usados"
 
 
 export interface MenuItem {

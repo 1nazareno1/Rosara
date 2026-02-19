@@ -9,25 +9,25 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "RoseResto - Menú Digital",
+  title: "Iphones",
   description: "Menú digital del restaurante RoseResto",
   generator: "v0.app",
       icons: {
     icon: [
       {
-        url: "/Otros/layout-Rose.png",
+        url: "S",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/Otros/layout-Rose.png",
+        url: "",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/Otros/layout-Rose.png",
+        url: "",
         type: "image/svg+xml",
       },
     ],
-    apple: "/Otros/layout-Rose.png",
+    apple: "",
   },
 }
 

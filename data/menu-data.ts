@@ -1,11 +1,11 @@
 import type { MenuData } from "@/types/menu"
-import { panaderia } from "./Menu/Panaderia"
-import { bebidasConAlcohol } from "./Menu/BebidasConAlcohol"
+import { nuevos } from "./Menu/Nuevos"
+import { usados } from "./Menu/Usados"
 
 
 export const menuData: MenuData = {
-  bebidasConAlcohol,
-  panaderia,
+  nuevos,
+  usados,
   
 
 }
