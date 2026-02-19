@@ -29,7 +29,7 @@ export default function MenuItems({ items, categoryLabel }: MenuItemsProps) {
     return (
       <Box sx={{ textAlign: "center", py: 8 }}>
         <Typography variant="h6" color="text.secondary">
-          No hay platos disponibles en esta categoría
+          No hay productos disponibles en esta categoría
         </Typography>
       </Box>
     )

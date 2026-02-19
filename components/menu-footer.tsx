@@ -18,17 +18,17 @@ export default function MenuFooter() {
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
             <Typography variant="h6" gutterBottom sx={{ fontWeight: 700 }}>
-              RoseResto
+              NombreDeEmpresa
             </Typography>
             <Typography variant="body2" sx={{ opacity: 0.9, mb: 2 }}>
-              Experiencia gastronómica excepcional con los mejores ingredientes de la región.
+              Confiabilidad y buena atencion.
             </Typography>
             <Box sx={{ display: "flex", gap: 1 }}>
               <IconButton size="small" sx={{ color: "white" }}>
-                <Instagram size={20} onClick={() => window.open("https://www.instagram.com/espacio.sanmarcos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "_blank")} />
+                <Instagram size={20} onClick={() => window.open("https://www.instagram.com/nazareno_leiva_/")} />
               </IconButton>
               <IconButton size="small" sx={{ color: "white" }}>
-                <Phone size={20} onClick={() => window.open("https://wa.me/5492317572421", "_blank")} />
+                <Phone size={20} onClick={() => window.open("")} />
               </IconButton>
             </Box>
           </Grid>
@@ -55,19 +55,19 @@ export default function MenuFooter() {
             <Box sx={{ display: "flex", alignItems: "center", mb: 1, gap: 1 }}>
               <MapPin size={20} />
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                Av. San Martín 1257, 9 de Julio (6.500)
+                Calle xxxx, La Plata (6.500)
               </Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", mb: 1, gap: 1 }}>
               <Phone size={20} />
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                +54 11 1234-5678
+                xxxxxxx
               </Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
               <Mail size={20} />
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                info@roseresto.com.ar
+                info@xxxxx.com.ar
               </Typography>
             </Box>
           </Grid>
@@ -82,7 +82,7 @@ export default function MenuFooter() {
           }}
         >
           <Typography variant="body2" sx={{ opacity: 0.8 }}>
-            © 2025 RoseResto. Todos los derechos reservados.
+            © 2026 NombreDeEmpresa. Todos los derechos reservados.
           </Typography>
         </Box>
       </Container>

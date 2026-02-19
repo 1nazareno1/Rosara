@@ -71,7 +71,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
           />
 
           <LazyImage
-            src="https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/Rose-inicio"
+            src="https://res.cloudinary.com/dbnvfqybv/image/upload/v1771522393/basio_qzuure.webp"
             alt="Logo"
             width={240}
             height={100}
@@ -84,7 +84,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
         </Box>
       </Box>
 
-      <Container maxWidth="md">
+      <Container maxWidth="xl">
         {/* Welcome Section */}
         <Box sx={{ mb: 4, textAlign: "center" }}>
           <Box
@@ -106,7 +106,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
               letterSpacing: "0.5px",
             }}
           >
-            Menú
+            Iphone
           </Typography>
 
           <Typography
@@ -132,15 +132,15 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
         </Box>
 
         {/* Categories Grid */}
-        <Grid container spacing={1.5}>
+        <Grid container spacing={{ xs: 1.5, md: 3 }} justifyContent="center">
           {categories.reduce((acc: React.JSX.Element[], category, idx) => {
             const Icon = iconMap[category.icon];
             acc.push(
-              <Grid item xs={6} sm={6} md={3} key={category.id}>
+              <Grid item xs={6} sm={4} md={3} lg={2} key={category.id}>
                 <Card
                   onClick={() => handleCategoryClick(category.id)}
                   sx={{
-                    height: 160,
+                    height: { xs: 140, md: 170 },
                     display: "flex",
                     flexDirection: "column",
                     cursor: "pointer",
@@ -157,7 +157,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                 >
                   <Box
                     sx={{
-                      height: 90,
+                      height: { xs: 70, md: 100 },
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -165,7 +165,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                       borderBottom: "1px solid #e8ddd0",
                     }}
                   >
-                    {Icon && <Icon size={40} color="#8B6F47" strokeWidth={1.3} />}
+                    {Icon && <Icon size={44} color="#8B6F47" strokeWidth={1.3} />}
                   </Box>
                   <CardContent
                     sx={{
@@ -180,7 +180,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                       sx={{
                         fontWeight: 700,
                         color: "#2a2a2a",
-                        fontSize: "0.75rem",
+                        fontSize: { xs: "0.8rem", md: "0.95rem" },
                         letterSpacing: "0.3px",
                         textAlign: "center",
                       }}

@@ -1,8 +1,7 @@
-import { fitnesspoint } from "@/data/Menu/FitnessPoint"
 
 
-export type IconKey = "entradas" | "principales" | "sintacc" | "postres" | "bebidasSinAlcohol" | "panaderia" | "promos" 
-| "cafes" | "ejecutivo" | "bebidasConAlcohol" | "fitnesspoint"
+
+export type IconKey =  "panaderia" | "bebidasConAlcohol" 
 
 
 export interface MenuItem {
